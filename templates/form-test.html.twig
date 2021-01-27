@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+    </head>
+    <body>
+        <style> .red {color: red}</style>
+{#
+bootstrap_3_horizontal_layout.html.twig
+bootstrap_3_layout.html.twig
+bootstrap_4_horizontal_layout.html.twig
+bootstrap_4_layout.html.twig
+bootstrap_base_layout.html.twig
+form_div_layout.html.twig
+form_table_layout.html.twig
+foundation_5_layout.html.twig
+foundation_6_layout.html.twig
+#}
+        <h4>bootstrap_3_horizontal_layout.html.twig</h4>
+        {% form_theme form1 'bootstrap_3_horizontal_layout.html.twig' %}
+        {{ form(form1) }}
+        <h4>bootstrap_3_layout.html.twig</h4>
+        {% form_theme form2 'bootstrap_3_layout.html.twig' %}
+        {{ form(form2) }}
+        <h4>bootstrap_4_horizontal_layout.html.twig</h4>
+        {% form_theme form3 'bootstrap_4_horizontal_layout.html.twig' %}
+        {{ form(form3) }}
+        <h4>bootstrap_4_layout.html.twig</h4>
+        {% form_theme form4 'bootstrap_4_layout.html.twig' %}
+        {{ form(form4) }}
+        <h4>form_div_layout.html.twig</h4>
+        {% form_theme form5 'form_div_layout.html.twig' %}
+        {{ form_start(form5, {'attr': {'id': 'form_person_edit'}, 'name': 'testas'}) }}
+        {{ form_rest(form5) }}
+        <h4>form_table_layout.html.twig</h4>
+        {% form_theme form6 'form_table_layout.html.twig' %}
+        {{ form(form6) }}
+    </body>
+</html>
